@@ -1,20 +1,24 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-button class="hello" size="large" fill="outline">Hello World</ion-button>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-datetime #date></ion-datetime>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>
+<ion-accordion-group [multiple]="true" [value]="['first', 'third']">
+  <ion-accordion value="first">
+    <ion-item slot="header" color="light">
+      <ion-label>First Accordion</ion-label>
+    </ion-item>
+    <div class="ion-padding" slot="content">First Content</div>
+  </ion-accordion>
+  <ion-accordion value="second">
+    <ion-item slot="header" color="light">
+      <ion-label>Second Accordion</ion-label>
+    </ion-item>
+    <div class="ion-padding" slot="content">Second Content</div>
+  </ion-accordion>
+  <ion-accordion value="third">
+    <ion-item slot="header" color="light">
+      <ion-label>Third Accordion</ion-label>
+    </ion-item>
+    <div class="ion-padding" slot="content">Third Content</div>
+  </ion-accordion>
+</ion-accordion-group>
