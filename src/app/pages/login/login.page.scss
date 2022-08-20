@@ -1,4 +1,5 @@
-img {
+.background{
+    width: 100%;
     height: 35vh;
     object-fit: cover;
 }
@@ -43,7 +44,7 @@ img {
         font-style: italic;
         font-size: 0.95rem;
         }
-        
+
         input{
             border: 1px solid #DBDBDB;
             background: transparent;
